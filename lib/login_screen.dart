@@ -27,10 +27,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Center(child: SvgPicture.asset(
-                        'assets/icons/appIcon.svg',
-                    )
-                    ),
+                    Center(
+                        child: SvgPicture.asset(
+                      'assets/icons/appIcon.svg',
+                    )),
                     Center(
                       child: const Text(
                         "مرحباً بك مجدداً",
@@ -59,7 +59,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           hintText: 'ادخل البريد الالكتروني',
                           hintStyle:
                               TextStyle(color: Colors.black.withOpacity(.4)),
-                          contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+                          contentPadding:
+                              EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
                           //labelText: 'Email Address',
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -98,7 +99,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           hintStyle:
                               TextStyle(color: Colors.black.withOpacity(.4)),
                           //labelText: 'Email Address',
-                          contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+                          contentPadding:
+                              EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
                           border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20))),
@@ -123,12 +125,15 @@ class _LoginScreenState extends State<LoginScreen> {
                     Row(
                       children: [
                         SizedBox(
-                          width: 30,
+                          width: 20,
                         ),
-                        Text(
-                          "نسيت كلمة المرور؟",
-                          style: TextStyle(
-                              fontSize: 15, fontWeight: FontWeight.bold),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "نسيت كلمة المرور؟",
+                            style: TextStyle(
+                                fontSize: 15, fontWeight: FontWeight.bold),
+                          ),
                         ),
                         SizedBox(
                           width: 120,
@@ -146,7 +151,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     SizedBox(
                       height: 50,
                     ),
-
                     SizedBox(
                       height: 40,
                       width: double.infinity,
@@ -174,7 +178,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     SizedBox(
                       height: 40,
                       width: double.infinity,
-                     // color: Colors.grey.shade300,
+                      // color: Colors.grey.shade300,
                       child: Material(
                         color: Colors.grey.shade300,
                         borderRadius: BorderRadius.circular(20),
@@ -195,7 +199,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     SizedBox(
                       height: 40,
                     ),
-                     SizedBox(
+                    SizedBox(
                       width: double.infinity,
                       height: 40,
                       child: Material(
@@ -210,32 +214,30 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
 
-                    // Container(
-                    //   height: 40,
-                    //   width: double.infinity,
-                    //   color: Colors.blue,
-                    //   child: Padding(
-                    //     padding: const EdgeInsets.all(0.0),
-                    //     child: Material(
-                    //       borderRadius: BorderRadius.circular(30) ,
-                    //       child: MaterialButton(
-                    //         color: Colors.grey.shade300,
-                    //         padding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
-                    //         child: Text(
-                    //           "زيارة الموقع",
-                    //           style: TextStyle(color: Colors.black),
-                    //         ),
-                    //         onPressed: () {
-                    //           print(emailController.text);
-                    //           print(passwordController.text);
-                    //         },
-                    //       ),
-                    //     ),
-                    //   ),
-                    // )
-
-
-                     )
+                      // Container(
+                      //   height: 40,
+                      //   width: double.infinity,
+                      //   color: Colors.blue,
+                      //   child: Padding(
+                      //     padding: const EdgeInsets.all(0.0),
+                      //     child: Material(
+                      //       borderRadius: BorderRadius.circular(30) ,
+                      //       child: MaterialButton(
+                      //         color: Colors.grey.shade300,
+                      //         padding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+                      //         child: Text(
+                      //           "زيارة الموقع",
+                      //           style: TextStyle(color: Colors.black),
+                      //         ),
+                      //         onPressed: () {
+                      //           print(emailController.text);
+                      //           print(passwordController.text);
+                      //         },
+                      //       ),
+                      //     ),
+                      //   ),
+                      // )
+                    )
                   ],
                 ),
               ),
