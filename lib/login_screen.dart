@@ -211,6 +211,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           onPressed: () {},
                           padding: EdgeInsets.symmetric(vertical: 0),
                           child: Text("زيارة الموقع"),
+
                         ),
                       ),
 
@@ -237,7 +238,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       //     ),
                       //   ),
                       // )
-                    )
+                    ),
                   ],
                 ),
               ),
