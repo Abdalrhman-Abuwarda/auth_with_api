@@ -9,7 +9,7 @@ class ListVii extends StatelessWidget {
         child: Column(
           children: [
             Expanded(
-              
+
               child: ListView.builder(itemBuilder: (contex, index) {
                 return Widg(text: inn[index].toString(),
                 );
