@@ -1,5 +1,6 @@
 import 'package:abdullah_mansor/login_screen.dart';
 import 'package:flutter/material.dart';
+import 'counter_screen.dart';
 import 'list_view.dart';
 import 'home_layout.dart';
 import 'listbulddre.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-        home: UsersScreen());
+        home: CounterScreen());
   }
 }
 
