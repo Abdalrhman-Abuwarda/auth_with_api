@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CounterScreen extends StatefulWidget {
+  const CounterScreen({Key? key}) : super(key: key);
+
   //const CounterScreen({Key? key}) : super(key: key);
 
   @override
@@ -14,7 +16,7 @@ class _CounterScreenState extends State<CounterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Counter'),
+        title: const Text('Counter'),
 
       ),
       body: Center(
@@ -26,12 +28,12 @@ class _CounterScreenState extends State<CounterScreen> {
               setState(() {
                 counter += 1;
               });
-            }, child: Text('Add')),
-            SizedBox(
+            }, child: const Text('Add')),
+            const SizedBox(
               width: 40,
             ),
             Text('$counter'),
-            SizedBox(
+            const SizedBox(
               width: 40,
             ),
             ElevatedButton(onPressed: () {
@@ -39,7 +41,7 @@ class _CounterScreenState extends State<CounterScreen> {
                 counter -= 1;
               });
             },
-                child: Text('Min')
+                child: const Text('Min')
             ),
           ],
         ),
