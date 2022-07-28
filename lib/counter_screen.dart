@@ -15,6 +15,7 @@ class _CounterScreenState extends State<CounterScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Counter'),
+
       ),
       body: Center(
         child: Row(
